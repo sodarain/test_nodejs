@@ -3,6 +3,9 @@ const app = express()
 const port = 3000
 
 //app.get('/', (req, res) => res.send('Hello World!'))
+
+app.use(express.static('public'))
+
 const path = require('path');
 const router = express.Router();
 router.get('/', function (req, res) {
